@@ -3,7 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <div class="home-container">
+        <div class="home-content">
+          <h1 class="title">HOME</h1>
+          <h2 id="score">0</h2>
+          <h1>Fouls: <span id="fouls">0</span></h1>
+          <div class="home-controls">
+            <h1>CONTROLS:</h1>
+            <h1>SCORE</h1>
+            <button class="green" id="add1" onclick="addOne()">+1</button>
+            <button class="green" id="add2" onclick="addTwo()">+2</button>
+            <button class="green" id="add3" onclick="addThree()">+3</button>
+            <button class="red" id="minus1" onclick="minusOne()">-1</button>
+
+            <h1>FOULS</h1>
+            <button class="green" id="add1" onclick="addFoulOne()">+1</button>
+            <button class="red" id="minus1" onclick="minusFoulOne()">-1</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="away-container">
+        <div class="away-content">
+          <h1 class="title">AWAY</h1>
+          <h2 id="score">0</h2>
+          <h1>Fouls:</h1>
+          <div class="home-controls">
+            <h1>CONTROLS:</h1>
+            <h1>SCORE</h1>
+            <button class="green" id="add1">+1</button>
+            <button class="green" id="add2">+2</button>
+            <button class="green" id="add3">+3</button>
+            <button class="red" id="minus1">-1</button>
+
+            <h1>FOULS</h1>
+            <button class="green" id="add1">+1</button>
+            <button class="red" id="minus1">-1</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
